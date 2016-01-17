@@ -19,6 +19,7 @@
 	
 			.mui-title {
 				color: white;
+				text-align: center;
 			}
 			
 			.mui-icon-search {
@@ -28,7 +29,46 @@
 				background-color: orange;
 				color: white;
 			}
-	
+			img.f31 {
+				width: 60px;
+				height: 60px;
+				position: relative;
+				top: 30px;
+				left: 30px;
+			}
+			div.f3_2{
+				display: inline-block;
+			}
+			img.f32,img.f33,img.f34,img.f35{
+				
+				width: 30px;
+				height: 30px;
+				position: relative;
+				top: -2.5px;
+				left: 60px;
+				
+			}
+			img.f34,img.f35{
+				display: block;
+			}
+			img.f35{
+				position: relative;
+				top: -32.5px;
+				left: 95px;
+			}
+			/*img.f32,img.f34,img.f35,img.f33 {
+				width: 30px;
+				height: 30px;
+				top: -30px;
+				left: 30px;
+			}
+			img.f34,img.f35{
+				display: block;
+				left: 105px;
+			}
+			img.f35{
+				display: inline-block;
+			}*/
 		</style>
 
 	</head>
@@ -40,52 +80,52 @@
 		</header>
 		<div class="mui-content" style="background-color:#fff">
 			<div id="slider" class="mui-slider" >
-			<div class="mui-slider-group mui-slider-loop">
-				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="../images/banner.png">
-					</a>
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">http://127.0.0.1:8020/SirApp/index.html#
+							<img src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
 				</div>
-				<!-- 第一张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="../images/yingxiao_loogo.png">
-					</a>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
 				</div>
-				<!-- 第二张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="../images/banner.png">
-					</a>
-				</div>
-				<!-- 第三张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="../images/yingxiao_loogo.png">
-					</a>
-				</div>
-				<!-- 第四张 -->
-				<div class="mui-slider-item">
-					<a href="#">http://127.0.0.1:8020/SirApp/index.html#
-						<img src="../images/banner.png">
-					</a>
-				</div>
-				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="../images/yingxiao_loogo.png">
-					</a>
-				</div>
-			</div>
-			<div class="mui-slider-indicator">
-				<div class="mui-indicator mui-active"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-			</div>
-		</div>	
-		<marquee direction="right">这是一个滚动广告！</marquee>
+			</div>	
+			<marquee direction="right">这是一个滚动广告！</marquee>
 		    <ul class="mui-table-view mui-grid-view">
 		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
 		            <a href="#">
@@ -120,6 +160,27 @@
 		                <div class="mui-media-body">其他</div></a></li>
 		    </ul>    
 		</div>
+		
+		<hr />
+		
+		<div class="f3">
+			<img class="f31" src="../images/sir/logo_end.png">
+			<div class="f3_2" >
+				
+				<img class="f32" src="../images/sir/logo_end.png">
+					
+						
+				<img class="f33" src="../images/sir/logo_end.png">
+					
+					
+				<img class="f34" src="../images/sir/logo_end.png">
+					
+				<img class="f35" src="../images/sir/logo_end.png">
+				 
+			</div>
+		</div>
+		
+		<hr />
 		<!--底部导航-->
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item" href="#">
