@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.csshttp://127.0.0.1:8020/SirApp/index.html#-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+		<style>
+		body{margin: 0px;padding: 0px;}
+			.mui-bar-nav {
+				background-color: orangered;
+			}
+	
+			.mui-title {
+				color: white;
+				text-align: center;
+			}
+			
+			.mui-icon-search {
+				color: white;
+			}
+			marquee {
+				background-color: orange;
+				color: white;
+			}
+			
+			div.aaa {
+				position: relative;
+			}
+			div.bbb {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				width: 50%;
+			}
+			img.aa1 {
+				width: 50%;
+				margin: 0px;
+				padding: 60px;
+				background: red;
+				border: 5px solid gray;
+			}
+			img.bb1,img.cc1,img.dd1,img.ee1 {
+				width: 50%;
+				margin: 0px;
+				padding: 30px;
+				border: 5px solid gold;
+			}
+			div.qqq {
+				height: 60px;
+				background: red;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">首  页</h1>
+			<a class="mui-icon mui-icon-search mui-pull-right"></a>
+		</header>
+		<div class="mui-content" style="background-color:#fff">
+			<div id="slider" class="mui-slider" >
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">http://127.0.0.1:8020/SirApp/index.html#
+							<img src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>	
+			<marquee direction="right">这是一个滚动广告！</marquee>
+		    <ul class="mui-table-view mui-grid-view">
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/life.png">
+		                <div class="mui-media-body">生活</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/materna_and_child.png">
+		                <div class="mui-media-body">母婴</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		            	<img class="mui-media-object" src="../images/sec/travel.png">
+		                <div class="mui-media-body">旅行</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/car.png">
+		                <div class="mui-media-body">汽车</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/year.png">
+		                <div class="mui-media-body">年货</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/gift.png">
+		                <div class="mui-media-body">礼品</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#"><img class="mui-media-object" src="../images/sec/appliances.png">
+		                <div class="mui-media-body">电器</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/other.png">
+		                <div class="mui-media-body">其他</div></a></li>
+		    </ul>    
+		</div>
+		
+		<hr />
+		<p style="p">空间环境</p>
+		<div class="aaa">
+			
+				<img class="aa1" src="../images/sir/logo_end.png"/>
+				
+			<div class="bbb">
+				
+				<img style="background: #b04500;" class="bb1" src="../images/sir/logo_end.png"/>
+				
+				<img style="background: #F00500;" class="cc1" src="../images/sir/logo_end.png"/>
+				
+				<img style="background: #F04500;" class="dd1" src="../images/sir/logo_end.png"/>
+				
+				<img style="background: #FF4500;" class="ee1" src="../images/sir/logo_end.png"/>
+				
+				
+			</div>
+		</div>		
+		<hr />
+		<hr />
+	
+		<div class="qqq">
+			
+		</div>
+		
+		
+		<!--底部导航-->
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="#">
+		    首页
+		  	</a>
+		  	<a class="mui-tab-item" href="#">
+		    成为分销商
+		  	</a>
+		  	<a class="mui-tab-item" href="#">
+		    购物车
+		  	</a>
+		  	<a class="mui-tab-item" href="#">
+		    个人中心
+		  	</a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+		<!--<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+			document.getElementById("switch").addEventListener('toggle', function(e) {
+				if (e.detail.isActive) {
+					slider.slider({
+						interval: 5000
+					});
+				} else {
+					slider.slider({
+						interval: 0
+					});
+				}
+			});
+		</script>-->
+	</body>
+
+</html>
