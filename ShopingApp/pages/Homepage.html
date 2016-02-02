@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Homepage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.csshttp://127.0.0.1:8020/SirApp/index.html#-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+		<style>
+		body{margin: 0px;padding: 0px;}
+			.mui-bar-nav {
+				background-color: orangered;
+			}
+	
+			.mui-title {
+				color: white;
+				text-align: center;
+			}
+			
+			.mui-icon-search {
+				color: white;
+			}
+			marquee {
+				background-color: orange;
+				color: white;
+			}
+			
+			.center-title-top{
+				position: relative;
+				width: 100%;
+				height: 30px;
+				/*background-color: red;*/
+			}
+			
+			.center-title-top .left-line {
+				position: absolute;
+				top: 15px;
+				left: 0;
+				width: 35%;
+				height: 2px;
+				background: gray;
+				
+			}
+			
+			.center-title-top .right-line {
+				position: absolute;
+				top: 15px;
+				right: 0;
+				width: 35%;
+				height: 2px;
+				background: gray;
+				
+			}
+			
+			.center-title-top .center-container {
+				position: relative;
+				left: 35%;
+				width: 30%;
+				text-align: center;
+			}
+			.center-title-top .title-image {
+				margin-top: 5px;
+				width: 18px;
+				height: 18px;
+			}
+			.center-title-top .title-text {
+				padding-left: 5px;
+				color: red;
+				font-size: 18px;
+			}
+			img.fd {
+				padding:20%;
+				border:5px solid white;
+				margin:0px;
+				width: 100%;
+				top: 0px;
+				left: 0px;
+			}
+			img.fe {
+				
+				padding:20%;
+				width: 100%;
+				border:5px solid white;
+				right: 0px;
+				left: 0px;
+				/*float: right;*/
+				margin:0px;
+				
+			}
+			
+			div.aaa {
+				width: 50% ;
+				
+				background-color: darkgrey;
+				/*right: 5px;*/
+				/*display: inline;*/
+				float: left;
+			}
+			div.bbb {
+				width: 50% ;
+				/*height: 20px;*/
+				/*background-color: gold;*/
+				float: right;
+				/*right: 5px;*/
+				
+			}
+			div.ccc {
+				width: 50% ;
+				background-color: red;
+				float: left;
+			}
+			div.ddd {
+				width: 50% ;
+				background-color: darkgrey;
+				float: left;
+			}
+			div.eee {
+				width: 50% ;
+				background-color: black;
+				position: relative;
+				top: -3px;
+				float: left;
+				
+			}
+			div.fff {
+				width: 50% ;
+				background-color: blue;
+				position: relative;
+				top: -3px;
+				float: left;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title"><b>首  页</b></h1>
+			<!--<a class="mui-icon mui-icon-search mui-pull-right"></a>-->
+			<a href="#">
+				<img style=" width: 30px;float: right;margin: 8px 0px;" src="../images/search_normal.png">
+			</a>
+		</header>
+		<div class="mui-content" >
+			<div id="slider" class="mui-slider" >
+				<!--<img style="display: inline;" src="../images/advertising_boxes_5.png">-->
+				<div class="mui-slider-group mui-slider-loop" >
+					<!--<img  src="../images/advertising_boxes_5.png">-->
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img style=" padding: 50px 200px 50px;top:0px;  margin: auto;" src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img style=" padding: 50px 200px 50px;top:0px;  margin: auto;" src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img style=" padding: 50px 200px 50px;top:0px; src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img style=" padding: 50px 200px 50px;top:0px; src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">http://127.0.0.1:8020/SirApp/index.html#
+							<img style=" padding: 50px 200px 50px;top:0px; src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img style=" padding: 50px 200px 50px;top:0px; src="../images/yingxiao_loogo.png">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>	
+			<marquee direction="right">这是一个滚动广告！</marquee>
+		    <ul class="mui-table-view mui-grid-view">
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/life.png">
+		                <div class="mui-media-body">生活</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/materna_and_child.png">
+		                <div class="mui-media-body">母婴</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		            	<img class="mui-media-object" src="../images/sec/travel.png">
+		                <div class="mui-media-body">旅行</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/car.png">
+		                <div class="mui-media-body">汽车</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/year.png">
+		                <div class="mui-media-body">年货</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/gift.png">
+		                <div class="mui-media-body">礼品</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#"><img class="mui-media-object" src="../images/sec/appliances.png">
+		                <div class="mui-media-body">电器</div></a></li>
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+		            <a href="#">
+		                <img class="mui-media-object" src="../images/sec/other.png">
+		                <div class="mui-media-body">其他</div></a></li>
+		    </ul>    
+			<div class="center-title-top">
+				<div class="center-title-top left-line"></div>
+				<div class="center-title-top center-container" >
+					<img class="center-title-top title-image" style="position: relative;bottom: -2px;" src="../images/popular_item_icon.png"/>
+					<span class="center-title-top title-text" style="font-size: 0.8em;position: relative;bottom: 2px;">人气商品</span>
+				</div>
+				<div class="center-title-top right-line"></div>
+			</div>
+			<!--<div style="height: 380px;background-color: red;">
+				<div style="float: left; background-color: yellow;height: 180px;width: 50%;">
+					
+				</div>
+				<div style="float: right; background-color: green;height: 180px;width: 50%;">
+					<div style="float: left; background-color: blue;height: 50%;width: 50%;">
+					
+					</div>
+					<div style="float: left; background-color: black;height: 50%;width: 50%;">
+					
+					</div>
+					<div style="float: left; background-color: gold;height: 50%;width: 50%;">
+					
+					</div>
+					<div style="float: left; background-color: aquamarine;height: 50%;width: 50%;">
+					
+					</div>
+				</div>
+			</div>
+		-->
+		
+			<div >
+				<img style="float: left; width: 50%;border: 2px solid white;padding: 15%;background: #A9A9A9;" src="../images/sir/logo_end.png"/>
+				<div style="float: left;width: 50%;background: #A9A9A9;">
+					
+							<img style="width: 50%;float: right;border: 2px solid white;padding: 15%;" src="../images/sir/logo_end.png"/>
+						
+							<img style="width: 50%;float: right;border: 2px solid white;padding: 15%;" src="../images/sir/logo_end.png"/>
+					
+							<img style="width: 50%;float: right;border: 2px solid white;padding: 15%;" src="../images/sir/logo_end.png"/>
+						
+							<img style="width: 50%;float: right;border: 2px solid white;padding: 15%;" src="../images/sir/logo_end.png"/>
+					
+				</div>
+			</div>	
+			<div class="center-title-top" style="overflow: hidden;">
+				<div class="center-title-top left-line"></div>
+					<div class="center-title-top center-container">
+						<img class="center-title-top title-image" style="position: relative;bottom: -2px;" src="../images/special_icon.png"/>
+						<span class="center-title-top title-text" style="font-size: 0.8em;position: relative;bottom: 2px;">有特色</span>
+					</div>
+				<div class="center-title-top right-line"></div>
+			</div>
+			<div class="sir-bock-top" style="width: auto;height: 550px;position: relative;">
+				<div style="width: 100%;margin: 0px;height: 300px;background: #A9A9A9;float: left; border: 2px solid white;">
+					
+				</div>	
+				<div style="width: 25%;margin: 0px;height: 250px;background: #A9A9A9;float: left; border: 2px solid white;">
+					
+				</div>
+				<div style="width: 25%;margin: 0px;height: 250px;background: #A9A9A9;float: left; border: 2px solid white;">
+					
+				</div>
+				<div style="width: 25%;margin: 0px;height: 250px;background: #A9A9A9;float: left; border: 2px solid white;">
+					
+				</div>
+				<div style="width: 25%;margin: 0px;height: 250px;background: #A9A9A9;float: left; border: 2px solid white;">
+					
+				</div>
+			</div>
+			<div class="center-title-top">
+				<div class="center-title-top left-line"></div>
+					<div class="center-title-top center-container">
+						<img class="center-title-top title-image" style="position: relative;bottom: -2px;" src="../images/yu_recommend_icon.png"/>
+						<span class="center-title-top title-text" style="font-size: 0.8em;position: relative;bottom: 2px;">雩推荐</span>
+					</div>
+				<div class="center-title-top right-line"></div>
+			</div>
+		
+			
+			<div class="sir-bock-top" style="width: 100%;height: 550px">
+				<div style="width: 50%;float: left;">
+					<div style="width: 100%;margin: 0px;height: 250px; background: #A9A9A9; border: 2px solid white;"></div>	
+					<div style="width: 100%;margin: 0px;height: 300px; background: #A9A9A9;border: 2px solid white;"></div>
+				</div>
+				<div style="width: 50%;float: right;">
+					<div style="width: 100%;margin: 0px;height: 300px; background: #A9A9A9; border: 2px solid white;"></div>
+					<div style="width: 50%;margin: 0px;float: right;height: 250px; background: #A9A9A9;border: 2px solid white;"></div>
+					<div style="width: 50%;margin: 0px;height: 250px; background: #A9A9A9;border: 2px solid white;"></div>
+				</div>
+			</div>
+			<hr />
+			
+			<!--<div style="position: fixed;bottom: 0px;">
+				<ul class="mui-table-view mui-grid-view">
+			        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+			            <a href="#">
+			                <img class="mui-media-object" src="../images/bottom-pic/home_mormal.png">
+			                <div class="mui-media-body">首页</div></a></li>
+			        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+			            <a href="#">
+			                <img class="mui-media-object" src="../images/bottom-pic/order_form_mormal.png">
+			                <div class="mui-media-body">订单</div></a></li>
+			        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+			            <a href="#">
+			            	<img class="mui-media-object" src="../images/bottom-pic/shopping_cart_normal.png">
+			                <div class="mui-media-body">购物车</div></a></li>
+			        <li class="mui-table-view-cell mui-media mui-col-xs-6">
+			            <a href="#">
+			                <img class="mui-media-object" src="../images/bottom-pic/personal_center_normal.png">
+			                <div class="mui-media-body">个人中心</div></a></li>			    
+		    	</ul>	
+			</div>-->
+		
+		
+			<div style="width: auto;height: 120px;background: white;">
+				
+			</div>
+					
+			
+			<!--底部导航-->
+		
+			<nav class="mui-bar mui-bar-tab" style="background: #FFA500;">
+				<a class="mui-tab-item" href="#">
+					<img style="width: 35px;" class="mui-media-object" src="../images/bottom-pic/home_mormal.png">
+					<div style="color: white;font-size: 0.8em;">
+						首页
+					</div>
+			  	</a>
+			  	<a class="mui-tab-item" href="Becomedistributor.html">
+			    	<img style="width: 40px;" class="mui-media-object" src="../images/distributor_mormal.png">
+					<div style="color: white;font-size: 0.8em;">
+						成为分销商
+					</div>
+			  	</a>
+			  	<a class="mui-tab-item" href="#">
+			  		<img style="width: 38px;" class="mui-media-object" src="../images/bottom-pic/shopping_cart_normal.png">
+					<div style="color: white;font-size: 0.8em;">
+						购物车
+					</div>
+			  	</a>
+			  	<a class="mui-tab-item" href="#">
+			    	<img style="width: 35px;" class="mui-media-object" src="../images/bottom-pic/personal_center_normal.png">
+					<div style="color: white;font-size: 0.8em;">
+						个人中心
+					</div>
+			  	</a>
+			</nav>
+		
+			<script src="js/mui.min.js"></script>
+			<!--<script type="text/javascript" charset="utf-8">
+				mui.init({
+					swipeBack:true //启用右滑关闭功能
+				});
+				var slider = mui("#slider");
+				document.getElementById("switch").addEventListener('toggle', function(e) {
+					if (e.detail.isActive) {
+						slider.slider({
+							interval: 5000
+						});
+					} else {
+						slider.slider({
+							interval: 0
+						});
+					}
+				});
+			</script>-->
+		
+			
+		</div>
+	</body>
+
+</html>
